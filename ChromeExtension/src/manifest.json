@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Better letter",
+  "description": "Write letters easier.",
+  "version": "3.0",
+  "icons": {
+    "16": "./icons/icon-16.png",
+    "32": "./icons/icon-32.png",
+    "48": "./icons/icon-48.png",
+    "128": "./icons/icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "run_at": "document_idle",
+      "all_frames": false,
+      "js": ["content-script.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["content-script.css", "chunk-vendors.js", "app.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "host_permissions": ["<all_urls>"]
+}

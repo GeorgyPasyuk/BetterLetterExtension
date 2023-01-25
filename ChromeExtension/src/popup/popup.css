@@ -1,0 +1,43 @@
+body {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(30 30 30);
+}
+
+.btn1,
+.btn2 {
+  width: 100px;
+  height: 70px;
+  outline: none;
+  border: none;
+  font-size: 30px;
+  font-weight: 700;
+  opacity: 20;
+}
+
+.btn1:hover,
+.btn2:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.btn1 {
+  background-color: rgba(22, 151, 0, 1);
+  opacity: 0.5;
+  border-top-left-radius: 5rem;
+  border-bottom-left-radius: 5rem;
+}
+
+.btn2 {
+  background-color: #f66d7d;
+  opacity: 0.5;
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+}
+
+.opacity {
+  opacity: 1;
+}
