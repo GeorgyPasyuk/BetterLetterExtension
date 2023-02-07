@@ -33,7 +33,6 @@ function stateIsGot(counterState) {
     document.getElementsByTagName("head")[0].appendChild(script);
     document.getElementsByTagName("head")[0].appendChild(script2);
 
-    divEl.style.all = "initial";
     divEl.id = "myDiv";
     divEl.style.position = "fixed";
     divEl.style.zIndex = "999999";
@@ -47,7 +46,6 @@ function stateIsGot(counterState) {
     const divApp = document.createElement("div");
     divApp.id = "app";
     divEl.append(divApp);
-
     document.body.prepend(divEl);
     return;
   }

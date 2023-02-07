@@ -292,7 +292,7 @@
               dragging() {
                 this.pickedUp &&
                   ((this.mainForm.style.left = event.clientX - 360 + "px"),
-                  (this.mainForm.style.top = event.clientY - 5 + "px"));
+                  (this.mainForm.style.top = event.clientY - 60 + "px"));
               },
               drop() {
                 this.pickedUp = !1;
