@@ -291,8 +291,8 @@
               },
               dragging() {
                 this.pickedUp &&
-                  ((this.mainForm.style.left = event.clientX - 360 + "px"),
-                  (this.mainForm.style.top = event.clientY - 60 + "px"));
+                  ((this.mainForm.style.left = event.clientX - 300 + "px"),
+                  (this.mainForm.style.top = event.clientY - 20 + "px"));
               },
               drop() {
                 this.pickedUp = !1;
